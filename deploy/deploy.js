@@ -24,8 +24,8 @@ module.exports = async ({ deployments, getNamedAccounts }) => {
     const txn = await cumulativeMerkleDrop.setMerkleRoot(
         '0x323e1a13446c2a6ed35c700e5f336cdd367b554f76fd7e8268eb3a302e963924',
         {
-            maxFeePerGas: 100000000000,
-            maxPriorityFeePerGas: 2000000000,
+            maxFeePerGas: 100,
+            maxPriorityFeePerGas: 200,
         },
     );
     await txn;

@@ -22,7 +22,7 @@ contract SignatureMerkleDrop128 is ISignatureMerkleDrop128, Ownable {
     // This is a packed array of booleans.
     mapping(uint256 => uint256) private _claimedBitMap;
 
-    uint256 private constant _CLAIM_GAS_COST = 10000;
+    uint256 private constant _CLAIM_GAS_COST = 60000;
 
     receive() external payable {}  // solhint-disable-line no-empty-blocks
 
